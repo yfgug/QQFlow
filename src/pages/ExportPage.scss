@@ -1,0 +1,142 @@
+.export-page { max-width: 700px; }
+
+.export-prereq {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background: rgba(245, 158, 11, 0.1);
+  border-radius: var(--border-radius);
+  color: var(--warning);
+  font-size: 13px;
+
+  ul { margin-top: 4px; padding-left: 20px; }
+}
+
+.export-start-card, .export-progress-card, .export-log-card, .export-result-card {
+  padding: 20px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  margin-bottom: 12px;
+}
+
+.export-info { margin-bottom: 16px; }
+.export-info-item {
+  display: flex; gap: 8px; padding: 6px 0; font-size: 13px;
+  .label { color: var(--text-secondary); }
+  .value { font-weight: 500; }
+}
+
+.format-select { margin-bottom: 16px;
+  label { display: block; font-size: 13px; font-weight: 500; margin-bottom: 8px; }
+}
+.format-options { display: flex; gap: 8px; margin-bottom: 8px; }
+.format-btn {
+  padding: 8px 16px; border: 1px solid var(--border-color); border-radius: 8px;
+  font-size: 13px; transition: all 0.15s;
+  &:hover { background: var(--bg-hover); }
+  &.active { border-color: var(--primary); background: var(--primary-light); color: var(--primary); }
+}
+.format-hint { font-size: 12px; color: var(--text-tertiary); }
+
+.folder-select { margin-bottom: 20px;
+  label { display: block; font-size: 13px; font-weight: 500; margin-bottom: 8px; }
+}
+.folder-row { display: flex; gap: 8px; }
+.folder-input {
+  flex: 1; padding: 8px 12px; border: 1px solid var(--border-color); border-radius: 8px;
+  background: var(--bg-tertiary); font-size: 13px; color: var(--text-primary);
+}
+
+.export-progress-header {
+  display: flex; align-items: center; gap: 8px; color: var(--primary); font-weight: 500;
+}
+
+.export-result-header {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 16px;
+  h2 { font-size: 18px; }
+}
+
+.export-stats {
+  display: flex; gap: 24px; margin-bottom: 16px;
+}
+.stat-item { text-align: center; }
+.stat-number { font-size: 24px; font-weight: 700; color: var(--primary); }
+.stat-label { font-size: 12px; color: var(--text-secondary); }
+
+.export-actions { display: flex; gap: 8px; }
+
+.export-log-card {
+  h3 { font-size: 14px; margin-bottom: 12px; }
+}
+
+.group-select-section {
+  margin-bottom: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.group-select-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  label { font-size: 13px; font-weight: 500; }
+}
+
+.group-select-actions {
+  display: flex; gap: 8px;
+  .btn-link {
+    background: none; border: none; color: var(--primary); cursor: pointer;
+    font-size: 12px; padding: 2px 4px;
+    &:hover { text-decoration: underline; }
+  }
+}
+
+.search-box {
+  display: flex; align-items: center; gap: 6px;
+  padding: 6px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  margin-bottom: 8px;
+  background: var(--bg-tertiary);
+  input {
+    border: none; outline: none; flex: 1; font-size: 13px;
+    background: transparent; color: var(--text-primary);
+    &::placeholder { color: var(--text-tertiary); }
+  }
+}
+
+.group-check-list {
+  max-height: 220px;
+  overflow-y: auto;
+  font-size: 13px;
+}
+
+.group-check-item {
+  display: flex; align-items: center; gap: 8px;
+  padding: 5px 6px; border-radius: 4px; cursor: pointer;
+  &:hover { background: var(--bg-hover); }
+}
+
+.check-box {
+  display: flex; align-items: center; flex-shrink: 0;
+  color: var(--primary);
+}
+
+.group-check-name {
+  flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+.group-check-count {
+  color: var(--text-tertiary); font-size: 12px; flex-shrink: 0;
+}
+
+.empty-hint { color: var(--text-tertiary); font-size: 13px; text-align: center; padding: 8px; }
+.loading-hint { color: var(--text-tertiary); font-size: 13px; margin-bottom: 12px; }
+
+.elapsed { color: var(--text-tertiary); font-size: 12px; margin-left: 4px; }
+.progress-log { margin-top: 12px; }
+.progress-msg { font-size: 12px; color: var(--text-tertiary); padding: 2px 0; }

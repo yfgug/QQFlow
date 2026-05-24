@@ -1,0 +1,62 @@
+.database-page {
+  max-width: 700px;
+}
+
+.db-action-bar {
+  margin-bottom: 16px;
+}
+
+.db-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 40px;
+  color: var(--text-tertiary);
+  text-align: center;
+
+  h3 { color: var(--text-secondary); }
+  p { font-size: 13px; }
+  .db-hint { font-size: 12px; font-family: monospace; margin-top: 8px; }
+}
+
+.db-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.db-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.15s;
+
+  &:hover { box-shadow: var(--shadow-sm); }
+  &.selected { border-color: var(--primary); background: var(--primary-light); }
+}
+
+.db-card-icon { color: var(--primary); }
+.db-card-info { flex: 1; }
+.db-card-qq { font-weight: 600; font-size: 14px; }
+.db-card-path { font-size: 12px; color: var(--text-tertiary); font-family: monospace; }
+.db-card-size { font-size: 12px; color: var(--text-secondary); margin-top: 4px; }
+.db-card-check { color: var(--primary); }
+
+.db-selected-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 12px 16px;
+  background: var(--primary-light);
+  border-radius: 8px;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 500;
+}

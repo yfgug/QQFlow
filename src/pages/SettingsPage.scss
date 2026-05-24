@@ -1,0 +1,25 @@
+.settings-page { max-width: 600px; }
+
+.settings-section {
+  margin-bottom: 24px;
+  h2 { font-size: 14px; font-weight: 600; margin-bottom: 12px; color: var(--text-secondary); }
+}
+
+.settings-card {
+  background: var(--card-bg); border: 1px solid var(--border-color);
+  border-radius: var(--border-radius); overflow: hidden;
+}
+
+.setting-item {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px; border-bottom: 1px solid var(--border-color);
+  &:last-child { border-bottom: none; }
+}
+
+.setting-info {
+  display: flex; align-items: center; gap: 12px;
+  color: var(--text-primary);
+}
+
+.setting-title { font-size: 14px; font-weight: 500; }
+.setting-desc { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }

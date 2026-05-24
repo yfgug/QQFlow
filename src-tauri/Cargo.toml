@@ -1,0 +1,35 @@
+[package]
+name = "qqflow-rust"
+version = "1.1.5"
+edition = "2021"
+description = "QQFlow - QQ Chat Export Tool (Rust + Tauri)"
+
+[dependencies]
+tauri = { version = "2", features = ["devtools"] }
+tauri-plugin-shell = "2"
+tauri-plugin-dialog = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rusqlite = { version = "0.39", features = ["bundled-sqlcipher-vendored-openssl"] }
+tokio = { version = "1", features = ["full"] }
+chrono = "0.4"
+base64 = "0.22"
+csv = "1.3"
+
+[target.'cfg(windows)'.dependencies]
+windows = { version = "0.58", features = [
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_System_Threading",
+    "Win32_System_Diagnostics_Debug",
+    "Win32_System_Diagnostics_ToolHelp",
+    "Win32_System_Kernel",
+    "Win32_UI_WindowsAndMessaging",
+] }
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]

@@ -1,0 +1,74 @@
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 8px;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+  user-select: none;
+  -webkit-app-region: drag;
+}
+
+.title-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title-logo {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-gradient);
+  color: white;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.title-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.title-sidebar-toggle {
+  margin-left: 8px;
+  padding: 4px;
+  border-radius: 4px;
+  color: var(--text-secondary);
+  -webkit-app-region: no-drag;
+
+  &:hover {
+    background: var(--bg-hover);
+  }
+}
+
+.title-window-controls {
+  display: flex;
+  align-items: center;
+  -webkit-app-region: no-drag;
+}
+
+.title-window-control-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 28px;
+  border-radius: 4px;
+  color: var(--text-secondary);
+  transition: all 0.15s;
+
+  &:hover {
+    background: var(--bg-hover);
+  }
+
+  &.is-close:hover {
+    background: var(--danger);
+    color: white;
+  }
+}

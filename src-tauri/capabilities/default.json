@@ -1,0 +1,25 @@
+{
+  "identifier": "default",
+  "description": "Default permissions for QQFlow",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "core:window:allow-close",
+    "core:window:allow-minimize",
+    "core:window:allow-maximize",
+    "core:window:allow-toggle-maximize",
+    "core:window:allow-is-maximized",
+    "core:window:allow-set-size",
+    "core:window:allow-set-focus",
+    "core:window:allow-start-dragging",
+    "shell:allow-open",
+    "shell:allow-spawn",
+    "dialog:allow-open",
+    {
+      "identifier": "shell:allow-execute",
+      "allow": [
+        { "name": "explorer", "cmd": "explorer", "args": true }
+      ]
+    }
+  ]
+}
